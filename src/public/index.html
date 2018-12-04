@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <title>Js-Chat</title>
@@ -15,7 +15,7 @@
       <a class="navbar-brand mx-auto" href="/">Js-Chat</a>
     </nav>
 
-    <div class="card col-md-4 mx-auto mt-5" id="nickWrap">
+    <div id="nickWrap" class="card col-md-4 mx-auto mt-5">
       <div class="card-header">
         <h3>Enter your Username:</h3>
       </div>
@@ -37,20 +37,21 @@
               <h4>Chat</h3>
             </div>
 
-            <div class="card-body" id="chat" ></div>
+            <div id="chat" class="card-body"></div>
 
-            <form class="card-footer"  id="message-form" >
+            <form id="message-form" class="card-footer">
               <div class="input-group">
-                <input type="text" class="form-control" id="message" />
+                <input type="text" id="message" class="form-control"/>
                 <div class="input-group-append">
                   <button class="btn btn-warning">
-                    <i class="fas fa-location-arrow"></i>Send
+                    <i class="fas fa-location-arrow"></i> Send
                   </button>
                 </div>
               </div>
             </form>
           </div>
         </div>
+
         <div class="card">
           <div class="card-header">
             <h3>Users:</h3>
@@ -63,7 +64,7 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-      <script src="/socket.io/socket.io.js"></script>
-      <script src="/js/main.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
